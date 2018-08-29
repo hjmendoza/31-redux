@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
 import App from './components/app.js';
 
@@ -11,4 +11,4 @@ class Main extends Component {
   }
 }
 
-ReactDom.render(<Main/>, document.getElementById('root'));
+ReactDOM.render(<Main/>, document.getElementById('root'));

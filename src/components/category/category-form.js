@@ -31,7 +31,7 @@ export default class CategoryForm extends Component {
 
     const changedBit = {
       [event.target.name]: val
-    };
+    }; 
     this.setState(changedBit);
   };
 
@@ -39,7 +39,7 @@ export default class CategoryForm extends Component {
     return (
       <form onSubmit={this.onSubmit}>
         <input name="name" placeholder="name" value={this.state.name} onChange={this.onChange} />
-        <input name="budget" placeholder="budget" type="number" value={this.state.budget} onChange={this.onChange} />
+        <input name="budget" type="number" value={this.state.budget} onChange={this.onChange} />
         <button>{this.props.buttonText}</button>
       </form>
     );
